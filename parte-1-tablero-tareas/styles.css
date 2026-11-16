@@ -1,0 +1,17 @@
+
+/* ==========================================
+   UNIDAD 4 - PASO 8
+   VISIBILIDAD DE TAREAS FILTRADAS
+   ========================================== */
+
+/* Ocultar tareas que no cumplen los filtros */
+.tarea.oculta {
+  display: none;
+}
+
+/* Destacar el filtro de estado seleccionado */
+.btn-filtro-estado.activo {
+  background-color: #065A82;
+  color: #FFFFFF;
+  border-color: #065A82;
+}

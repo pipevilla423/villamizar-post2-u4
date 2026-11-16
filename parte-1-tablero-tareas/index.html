@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablero de Tareas — U4</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Tablero de Tareas del Equipo</h1>
+  </header>
+
+  <!-- Formulario para crear tareas -->
+  <section id="controles">
+    <input
+      type="text"
+      id="input-titulo"
+      placeholder="Título de la tarea"
+      aria-label="Título de la tarea"
+    >
+
+    <input
+      type="text"
+      id="input-descripcion"
+      placeholder="Descripción"
+      aria-label="Descripción de la tarea"
+    >
+
+    <select id="select-prioridad" aria-label="Prioridad de la tarea">
+      <option value="baja">Prioridad baja</option>
+      <option value="media">Prioridad media</option>
+      <option value="alta">Prioridad alta</option>
+    </select>
+
+    <button id="btn-agregar" type="button">
+      Agregar Tarea
+    </button>
+  </section>
+
+  <!-- Controles de filtrado -->
+  <section id="filtros">
+    <div class="filtro-grupo">
+
+      <button
+        type="button"
+        class="btn-filtro-estado"
+        data-estado="todas">
+        Todas
+      </button>
+
+      <button
+        type="button"
+        class="btn-filtro-estado"
+        data-estado="pendiente">
+        Pendientes
+      </button>
+
+      <button
+        type="button"
+        class="btn-filtro-estado"
+        data-estado="en-progreso">
+        En progreso
+      </button>
+
+      <button
+        type="button"
+        class="btn-filtro-estado"
+        data-estado="completada">
+        Completadas
+      </button>
+
+    </div>
+
+    <select
+      id="select-filtro-prioridad"
+      aria-label="Filtrar por prioridad">
+
+      <option value="todas">Todas las prioridades</option>
+      <option value="baja">Solo baja</option>
+      <option value="media">Solo media</option>
+      <option value="alta">Solo alta</option>
+
+    </select>
+  </section>
+
+  <!-- Estadísticas del equipo -->
+  <section id="stats" aria-label="Estadísticas de tareas"></section>
+
+  <!-- Contenedor de tareas dinámicas -->
+  <main id="tablero"></main>
+
+  <!-- JavaScript cargado después del análisis del HTML -->
+  <script src="app.js" defer></script>
+
+</body>
+</html>
