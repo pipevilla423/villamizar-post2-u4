@@ -1,0 +1,21 @@
+
+.invalido {
+  border: 2px solid red;
+}
+
+.valido {
+  border: 2px solid green;
+}
+
+.msg-error {
+  display: none;
+  color: red;
+}
+
+.msg-error.visible {
+  display: block;
+}
+
+.oculto {
+  display: none;
+}
